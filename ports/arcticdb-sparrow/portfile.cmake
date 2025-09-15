@@ -1,12 +1,12 @@
 if(VCPKG_TARGET_IS_LINUX)
-    message("Warning: `sparrow` requires Clang18+ or GCC 11+ on Linux")
+    message("Warning: `sparrow` requires Clang18+ or GCC 11.2+ on Linux")
 endif()
 
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO man-group/sparrow
     REF "${VERSION}"
-    SHA512 d97f37471812f5edbfbd407b831af95a624b46faa500a6eb46257af988414989af5e71671cbdc0a38a1a79404a6110894171d349621ce4bc73eb3590cb316575
+    SHA512 a92f3ce59005f996303ce94e4527de6a4c667ecdb3d797750af48ab797a5bc08417fc4e37c4bd5ef1b514cfdca7c98f4a2a6cef46d89494275dac88f16f32572
     HEAD_REF main
 )
 
